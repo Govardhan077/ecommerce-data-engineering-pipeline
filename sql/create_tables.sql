@@ -27,3 +27,12 @@ CREATE TABLE orders (
     order_status STRING,
     total_amount DECIMAL(10,2)
 );
+
+-- Order Items table
+CREATE TABLE order_items (
+    order_item_id INT,
+    order_id INT,
+    product_id INT,
+    quantity INT,
+    unit_price DECIMAL(10,2)
+);
