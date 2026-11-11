@@ -36,3 +36,13 @@ CREATE TABLE order_items (
     quantity INT,
     unit_price DECIMAL(10,2)
 );
+
+-- Payments table
+CREATE TABLE payments (
+    payment_id INT,
+    order_id INT,
+    payment_date DATE,
+    payment_method STRING,
+    payment_status STRING,
+    amount DECIMAL(10,2)
+);
