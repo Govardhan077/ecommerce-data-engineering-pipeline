@@ -17,3 +17,13 @@ CREATE TABLE products (
     stock_quantity INT,
     created_date DATE
 );
+
+
+-- Orders table
+CREATE TABLE orders (
+    order_id INT,
+    customer_id INT,
+    order_date DATE,
+    order_status STRING,
+    total_amount DECIMAL(10,2)
+);
